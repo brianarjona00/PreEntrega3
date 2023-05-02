@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="img/pexels-karolina-grabowska-5632381.jpg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Carrito de Compras "LIDER"</title>
+  </head>
+  <body>
+    <!-- Main -->
+    <main id="main">
+      <section id="container">
+        <div>
+          <h1>"LIDER"</h1>
+          <br />
+        </div>
+    <!-- Formulario -->
+        <h3>CARGA DE PRODUCTO</h3>
+        <form id="formAgregar">
+          <input type="text" id="nombre" placeholder="Nombre" required /><br />
+          <input
+            type="number"
+            id="precio"
+            placeholder="Precio"
+            required
+          /><br />
+          <input
+            type="number"
+            id="cantidad"
+            placeholder="Cantidad"
+            required
+          /><br />
+          <input type="text" id="marca" placeholder="Marca" required /><br />
+    <!-- Agregar -->
+          <button id="agregar" type="submit">Agregar producto</button>
+        </form>
+    <!-- Borrar -->
+        <form id="formEliminar">
+          <hr />
+          <h5>NOMBRE DEL PRODUCTO A QUITAR</h5>
+
+          <input
+            type="text"
+            id="nombreABorrar"
+            placeholder="Nombre a quitar"
+            required
+          />
+          <button id="eliminar" type="submit">Quitar producto</button>
+          <hr />
+        </form>
+
+        <div id="sectionVaciar">
+          <h5>PRESIONA EL BOTON PARA VACIAR POR COMPLETO EL CARRITO</h5>
+          <button id="vaciar" type="submit">Borrar</button>
+          <hr />
+        </div>
+      </section>
+    <!-- Lista de Productos Cargados -->
+      <section id="productos">
+        <h5>LISTA DE PRODUCTOS</h5>
+        <br />
+        <div id="lista"></div>
+      </section>
+    </main>
+    <script src="producto.js"></script>
+    <script src="lider.js"></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: wheat
+  }
+  #container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  button,
+  input {
+    margin: 10px;
+    border-radius: 5px; 
+  }
+  
+  #main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 80px;
+  }
